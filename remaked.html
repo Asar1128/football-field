@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Modal with Close Icon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Button to trigger the popup -->
+    <button class="unique-popup-button" onclick="togglePopup()">Show Popup</button>
+
+    <!-- The overlay background -->
+    <div id="unique-overlay" class="unique-overlay"></div>
+
+    <!-- The popup content -->
+    <div id="unique-popup" class="unique-popup">
+        <button class="close-button" onclick="togglePopup()"><i class="fas fa-times"></i></button>
+      <div class="team-btns">
+        <button id="column1" onclick="showteamone()">COLumn one</button>
+        <button id="column02" onclick="showteamtwo()">column two</button>
+      </div>
+        <div class="d-flex">
+            <div class="unique-col-1">
+                <!-- Content for column 1 -->
+                <h1 class="team-text">team 01</h1>
+                <div class="main-div">
+                    <div class="realmadrid-team">
+                        <!-- Strikers positions -->
+                        <div class="strikers">
+                            <!-- left wing -->
+                            <div class="player player-1">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Bale</p>
+                                </a>
+                            </div>
+                            <!-- striker -->
+                            <div class="player player-11">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Ronaldo</p>
+                                </a>
+                            </div>
+                            <!-- RIght wing -->
+                            <div class="player player-2">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Benzema</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--Mid Fielders  -->
+                        <div class="midfielders">
+                            <!-- Central Mid Fileder -->
+                            <div class="player player-3">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Kroos</p>
+                                </a>
+                            </div>
+                            <!-- Central Attacker Mid Fileder -->
+                            <div class="player player-4">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Silva</p>
+                                </a>
+                            </div>
+                            <!-- Central Mid Fileder -->
+                            <div class="player player-5">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Carvajal</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Defenders -->
+                        <div class="defenders defenders-1">
+                            <!-- Left FullBack -->
+                            <div class="player player-6 ">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Modric</p>
+                                </a>
+                            </div>
+                            <!-- Right Fullback -->
+                            <div class="player player-7 ">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Pepe</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="defenders defenders-2">
+                            <!-- Left Center Back -->
+                            <div class="player player-9">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Ramos</p>
+                                </a>
+                            </div>
+                            <!-- Right Center Back -->
+                            <div class="player player-10">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Nacho</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="defenders ">
+                            <!-- GoalKeeper -->
+                            <div class="player player-8">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <P>Casillas</P>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unique-col-2">
+                <h1 class="team-text">team02</h1>
+                <div class="main-div">
+                    <div class="realmadrid-team">
+                        <!-- Strikers positions -->
+                        <div class="strikers">
+                            <!-- left wing -->
+                            <div class="player player-1">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Bale</p>
+                                </a>
+                            </div>
+                            <!-- striker -->
+                            <div class="player player-11">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Ronaldo</p>
+                                </a>
+                            </div>
+                            <!-- RIght wing -->
+                            <div class="player player-2">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Benzema</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!--Mid Fielders  -->
+                        <div class="midfielders">
+                            <!-- Central Mid Fileder -->
+                            <div class="player player-3">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Kroos</p>
+                                </a>
+                            </div>
+                            <!-- Central Attacker Mid Fileder -->
+                            <div class="player player-4">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Silva</p>
+                                </a>
+                            </div>
+                            <!-- Central Mid Fileder -->
+                            <div class="player player-5">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Carvajal</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Defenders -->
+                        <div class="defenders defenders-1">
+                            <!-- Left FullBack -->
+                            <div class="player player-6 ">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Modric</p>
+                                </a>
+                            </div>
+                            <!-- Right Fullback -->
+                            <div class="player player-7 ">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Pepe</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="defenders defenders-2">
+                            <!-- Left Center Back -->
+                            <div class="player player-9">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Ramos</p>
+                                </a>
+                            </div>
+                            <!-- Right Center Back -->
+                            <div class="player player-10">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <p>Nacho</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="defenders ">
+                            <!-- GoalKeeper -->
+                            <div class="player player-8">
+                                <a href="">
+                                    <img src="rm-kroos.jpg" alt="">
+                                    <P>Casillas</P>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
